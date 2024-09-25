@@ -1,6 +1,6 @@
 #Class declaration
 class Invoice:
-    def __init__(self, description, category, product_code, brand, vendor, price):
+    def __init__(self, vendor, brand, description, category, product_code, price):
         self.description = description
         self.category = category
         self.product_code = product_code
