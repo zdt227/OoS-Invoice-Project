@@ -1,8 +1,7 @@
 from typing import Optional
 from google.api_core.client_options import ClientOptions
-from google.cloud import documentai  # type: ignore
-from google.protobuf.field_mask_pb2 import FieldMask  # Import FieldMask
-from google.protobuf.json_format import MessageToJson  # Import MessageToJson
+from google.cloud import documentai  
+from google.protobuf.field_mask_pb2 import FieldMask
 
 def parseInvoice():
     def process_document_sample(
@@ -12,7 +11,7 @@ def parseInvoice():
         file_path: str = r"C:\Users\Ztrei\OneDrive\Documents\Programming Projects\OoS Invoice Project\OoS-Invoice-Project\IMG_2614_rotated.pdf",
         mime_type: str = "application/pdf",
         field_mask: Optional[list] = ["text", "entities", "Invoice-Brand","Invoice-row"],
-        processor_version_id: Optional[str] = "1fe386d94daf6048"  # Use the version ID here
+        processor_version_id: Optional[str] = "1fe386d94daf6048"
     ) -> None:
         opts = ClientOptions(api_endpoint=f"us-documentai.googleapis.com")
 
