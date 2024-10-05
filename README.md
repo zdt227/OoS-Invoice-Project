@@ -1,13 +1,17 @@
 # OoS-Invoice-Project
 
-This is mostly spaghetti code at this point, with bits and pieces of stuff I've been working on.
+There is a lot of spaghetti code at this moment, but the core functionality is being built.
 
-1) Main.py contains some testing I did with adding invoice objects to an excel spreadsheet.
+Completed Tasks:
+* Create an object to hold invoice objects
+* Create an array which can hold the invoices
+* Transfer contents of invoice array into an excel spreadsheet and properly format parameters
+* Implement Google Document API to access invoice processser for sysco branded invoices
+* Output invoice contents to text file
+* Properly format the text file and extract invoice items into the array
 
-2) Invoice.py contains the invoice object which will be used to store parameters.
-
-3) test.py is me fiddling around with pytesseract, trying to figure out how to get it to fully extract the image file's text.
-
-4) SampleInvoice.png is a sample of what the invoices look like. When this project is fully implemented, there will be multiple kinds of invoices we will need to sucessfully interpret.
-
-5) Invoice_data.xls is the spreadsheet which data is currently being written to.
+To-do:
+* Modify invoice parsing code so it can work with pdfs which span multiple pages
+* Fine-tune invoice processor for sysco
+* Develop invoice processors for all other brands used by Lehigh
+* Optimize code where possible to bring performance closer to O(N) rather than O(N^2)
