@@ -3,7 +3,7 @@
 There is a lot of spaghetti code at this moment, but the core functionality is being built.
 
 Completed Tasks:
-* Create an object to hold invoice objects
+* Create an object to represent invoices and their parameters
 * Create an array which can hold the invoices
 * Transfer contents of invoice array into an excel spreadsheet and properly format parameters
 * Implement Google Document API to access invoice processser for sysco branded invoices
